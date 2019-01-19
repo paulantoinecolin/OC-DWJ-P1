@@ -1,0 +1,14 @@
+
+webagency_images/fonts/.DS_Store
+.DS_Store
+Intégrez la maquette du site d'une agence web.webloc
+*.xd
+*.jpg
+*.png
+*.ttf
+*.ico
+*.eot
+*.svg
+*.woff
+*.otf
+webagency_images/fonts/LICENSE.txt
