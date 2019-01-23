@@ -12,3 +12,8 @@ Intégrez la maquette du site d'une agence web.webloc
 *.woff
 *.otf
 webagency_images/fonts/LICENSE.txt
+webagency/_src/brief.webloc
+webagency/biref_client.md
+webagency/checklist.md
+webagency/www/base.html
+webagency/www/font/LICENSE.txt
