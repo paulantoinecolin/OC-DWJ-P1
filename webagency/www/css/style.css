@@ -141,7 +141,6 @@ nav a:hover {
 
 /* Bannière */
 
-/* mettre en forme le bouton de navigation */
 /* Ajouter les flèches de navigation sur la bannière */
 
 div#banner {
@@ -182,8 +181,17 @@ div#banner p.bouton_bleu {
 p.bouton_bleu {
   position: absolute;
   background-color: rgb(92, 173, 211);
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 12px 20px 12px 20px;
+}
+
+p.bouton_bleu a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+}
+
+p.bouton_bleu:hover {
   box-shadow: 0 4px 1px -1px rgb(68, 148, 187);
 }
 
