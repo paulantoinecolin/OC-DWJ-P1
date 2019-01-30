@@ -125,7 +125,7 @@ nav ul {
 nav li {
   width: 70px;
   text-align: center;
-  border: 1px solid Black;
+  position: relative;
 }
 
 nav a {
@@ -134,9 +134,11 @@ nav a {
   color: #7D7D7D;
 }
 
-nav a:hover {
+nav li:hover span {
+  position: relative;
+  display: block;
   border-top: 2px solid rgb(92, 173, 211);
-  padding-top: 37px;
+  top: -36px;
   color: #020202;
 }
 
@@ -151,8 +153,6 @@ div#banner {
 div#banner img {
   vertical-align: top;
   width: 100%;
-
-
 }
 
 div#banner_slogan {
