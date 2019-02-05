@@ -152,7 +152,7 @@ nav a:hover {
 /* Ajouter les flèches de navigation sur la bannière */
 
 div.banner {
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 div.banner img {
@@ -161,14 +161,15 @@ div.banner img {
 }
 
 div.banner_slogan {
-  padding-left: 230px;
+  padding-left: 159px;
   margin-top: -23.5%;
   color: white;
   font-size: 1.2em;
   font-family: 'roboto', serif;
 }
 
-div.banner_slogan h1 {
+h1 {
+  font-family: 'roboto', serif;
   text-transform: uppercase;
   line-height: 1em;
 }
@@ -202,14 +203,14 @@ p.bouton_bleu a {
 
 p.bouton_bleu:hover {
   box-shadow: 0 4px 1px -1px rgb(68, 148, 187);
-} */
+}
 
 
 /* Services */
 
-.services-wrapper {
-  position: relative;
-  margin-top: 1600px;
+div.services-wrapper {
+  margin-top: 300px;
+  border: 1px solid blue;
 }
 
 
