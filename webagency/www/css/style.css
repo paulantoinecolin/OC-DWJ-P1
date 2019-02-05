@@ -89,9 +89,16 @@
   padding: 0;
 }
 
-div#main-wrapper {
+div.main-wrapper {
   width: 100%;
   margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #FFF;
 }
 
 div.header-wrapper {
@@ -108,13 +115,12 @@ div.logo {
 /* Navigation */
 
 /* Résoudre le centrage du texte de Navigation pour avoir un hover de la bonne taille */
-/* Enlever bordure */
 
 nav {
   font-family: 'roboto', serif;
   color: #787878;
-  padding-top: 10px;
-  padding-right: 145px;
+  padding-top: 15px;
+  padding-right: 9.8%;
 }
 
 nav ul {
@@ -123,9 +129,9 @@ nav ul {
 }
 
 nav li {
-  width: 70px;
+  width: 80.5px;
   text-align: center;
-  position: relative;
+
 }
 
 nav a {
@@ -134,51 +140,49 @@ nav a {
   color: #7D7D7D;
 }
 
-nav li:hover span {
-  position: relative;
-  display: block;
+nav li:hover  {
   border-top: 2px solid rgb(92, 173, 211);
-  top: -36px;
   color: #020202;
+  margin-top: -30px;
 }
 
 /* Bannière */
 
 /* Ajouter les flèches de navigation sur la bannière */
 
-div#banner {
-  margin-top: 15px;
+div.banner {
+  padding-top: 100px;
 }
 
-div#banner img {
+div.banner img {
   vertical-align: top;
   width: 100%;
 }
 
-div#banner_slogan {
-  padding-left: 160px;
-  margin-top: -382px;
+div.banner_slogan {
+  padding-left: 230px;
+  margin-top: -23.5%;
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: 'roboto', serif;
 }
 
-div#banner_slogan h1 {
+div.banner_slogan h1 {
   text-transform: uppercase;
   line-height: 1.1em;
 }
 
-div#banner_slogan span {
+div.banner_slogan span {
   color: rgb(92, 173, 211);
 }
 
-div#banner_slogan p {
+div.banner_slogan p {
   margin-top: 13px;
   font-size: 77%;
 }
 
-div#banner p.bouton_bleu {
-  margin-top: 26px;
+div.banner p.bouton_bleu {
+  margin-top: 25px;
   font-size: 1em;
 }
 
@@ -186,7 +190,7 @@ p.bouton_bleu {
   position: absolute;
   background-color: rgb(92, 173, 211);
   border-radius: 3px;
-  padding: 12px 20px 12px 20px;
+  padding: 12px 15px 12px 15px;
 }
 
 p.bouton_bleu a {
@@ -197,11 +201,15 @@ p.bouton_bleu a {
 
 p.bouton_bleu:hover {
   box-shadow: 0 4px 1px -1px rgb(68, 148, 187);
-}
-
+} */
 
 
 /* Services */
+
+/* div.services-wrapper {
+  display: block;
+  margin-top: 200px;
+} */
 
 
 /* Projets */
