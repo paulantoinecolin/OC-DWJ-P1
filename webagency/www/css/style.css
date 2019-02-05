@@ -99,12 +99,14 @@ header {
   width: 100%;
   height: 100px;
   background: #FFF;
+  z-index: 100;
 }
 
 div.header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 div.logo {
@@ -114,12 +116,11 @@ div.logo {
 
 /* Navigation */
 
-/* Résoudre le centrage du texte de Navigation pour avoir un hover de la bonne taille */
 
 nav {
   font-family: 'roboto', serif;
   color: #787878;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-right: 9.8%;
 }
 
@@ -129,9 +130,9 @@ nav ul {
 }
 
 nav li {
-  width: 80.5px;
+  width: 80.4px;
   text-align: center;
-
+  border-top: 3px solid transparent;
 }
 
 nav a {
@@ -140,10 +141,10 @@ nav a {
   color: #7D7D7D;
 }
 
-nav li:hover  {
-  border-top: 2px solid rgb(92, 173, 211);
+nav a:hover {
+  border-top: 3px solid rgb(92, 173, 211);
+  padding-top: 40px;
   color: #020202;
-  margin-top: -30px;
 }
 
 /* Bannière */
@@ -163,13 +164,13 @@ div.banner_slogan {
   padding-left: 230px;
   margin-top: -23.5%;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'roboto', serif;
 }
 
 div.banner_slogan h1 {
   text-transform: uppercase;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 div.banner_slogan span {
@@ -206,10 +207,10 @@ p.bouton_bleu:hover {
 
 /* Services */
 
-/* div.services-wrapper {
-  display: block;
-  margin-top: 200px;
-} */
+.services-wrapper {
+  position: relative;
+  margin-top: 1600px;
+}
 
 
 /* Projets */
