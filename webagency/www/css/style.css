@@ -1,74 +1,74 @@
 /* Définition des polices personnalisées */
 
 @font-face {
-  font-family: "robotoregular";
   src: url("Roboto-Regular-webfont.eot");
   src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Regular-webfont.woff2") format("woff2"),
     url("Roboto-Regular-webfont.woff") format("woff"),
     url("Roboto-Regular-webfont.ttf") format("truetype"),
     url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
+  font-family: "robotoregular";
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "robotobold";
   src: url("Roboto-Bold-webfont.eot");
   src: url("Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Bold-webfont.woff2") format("woff2"),
     url("Roboto-Bold-webfont.woff") format("woff"),
     url("Roboto-Bold-webfont.ttf") format("truetype"),
     url("Roboto-Bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
+  font-family: "robotobold";
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "robotoblack";
   src: url("Roboto-Black-webfont.eot");
   src: url("Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Black-webfont.woff2") format("woff2"),
     url("Roboto-Black-webfont.woff") format("woff"),
     url("Roboto-Black-webfont.ttf") format("truetype"),
     url("Roboto-Black-webfont.svg#robotoblack") format("svg");
-  font-weight: normal;
+  font-family: "robotoblack";
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "robotolight";
   src: url("Roboto-Light-webfont.eot");
   src: url("Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Light-webfont.woff2") format("woff2"),
     url("Roboto-Light-webfont.woff") format("woff"),
     url("Roboto-Light-webfont.ttf") format("truetype"),
     url("Roboto-Light-webfont.svg#robotolight") format("svg");
-  font-weight: normal;
+  font-family: "robotolight";
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "robotomedium";
   src: url("Roboto-Medium-webfont.eot");
   src: url("Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Medium-webfont.woff2") format("woff2"),
     url("Roboto-Medium-webfont.woff") format("woff"),
     url("Roboto-Medium-webfont.ttf") format("truetype"),
     url("Roboto-Medium-webfont.svg#robotomedium") format("svg");
-  font-weight: normal;
+  font-family: "robotomedium";
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "fontawesome-webfont";
   src: url("fontawesome-webfont.eot");
   src: url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
     url("fontawesome-webfont.woff") format("woff"),
     url("fontawesome-webfont.ttf") format("truetype"),
     url("fontawesome-webfont.svg#fontawesome-webfont") format("svg");
-  font-weight: normal;
+  font-family: "fontawesome-webfont";
   font-style: normal;
+  font-weight: normal;
 }
 
 /* Eléments principaux de la page */
@@ -80,22 +80,22 @@
 }
 
 div.main-wrapper {
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 header {
   position: fixed;
+  z-index: 100;
+  background: #fff;
   width: 100%;
   height: 8%;
-  background: #fff;
-  z-index: 100;
 }
 
 div.header-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 div.logo {
@@ -104,31 +104,31 @@ div.logo {
 
 /* Navigation */
 
-nav {
-  color: #787878;
-  height: 100px;
+.nav_main {
   padding-right: 9.8%;
+  height: 100px;
+  color: #787878;
 }
 
-nav ul {
-  list-style-type: none;
+.nav_main ul {
   display: flex;
+  list-style-type: none;
 }
 
-nav li {
-  width: 80.4px;
-  text-align: center;
+.nav_main li {
   border-top: 3px solid transparent;
   padding-top: 50px;
+  width: 80.4px;
+  text-align: center;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 0.9em;
+.nav_main a {
   color: #7d7d7d;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 
-nav li:hover {
+.nav_main li:hover {
   border-top: 3px solid rgb(92, 173, 211);
   color: #020202;
 }
@@ -147,15 +147,15 @@ div.banner img {
 }
 
 div.banner_slogan {
-  padding-left: 159px;
   margin-top: -23.5%;
+  padding-left: 159px;
   color: white;
   font-size: 1.2em;
 }
 
 h1 {
-  text-transform: uppercase;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -179,15 +179,15 @@ div.banner p.bouton_bleu {
 
 p.bouton_bleu {
   position: absolute;
-  background-color: rgb(92, 173, 211);
   border-radius: 3px;
+  background-color: rgb(92, 173, 211);
   padding: 12px 15px 12px 15px;
 }
 
 p.bouton_bleu a {
-  text-decoration: none;
-  font-size: 1em;
   color: white;
+  font-size: 1em;
+  text-decoration: none;
 }
 
 p.bouton_bleu:hover {
@@ -202,9 +202,9 @@ div.services-wrapper {
 
 div#Services {
   margin: 0 auto;
-  text-align: center;
   width: 50%;
   height: 138px;
+  text-align: center;
 }
 
 div#Services h1 {
@@ -216,32 +216,32 @@ div#Services h2 {
 }
 
 hr {
-  width: 120px;
   margin: 0 auto;
+  width: 120px;
 }
 
 hr::before {
-  content: "";
+  position: absolute;
+  margin: -10px;
   border: 3px solid white;
   border-radius: 100%;
-  position: absolute;
-  height: 14px;
-  width: 14px;
   background: rgb(68, 148, 187);
-  margin: -10px;
+  width: 14px;
+  height: 14px;
+  content: "";
 }
 
 div.foot_block {
-  width: 100%;
-  height: 450px;
   display: flex;
   margin-top: 50px;
+  width: 100%;
+  height: 450px;
 }
 
 div.imac,
 div.services_list {
-  width: 50%;
   margin: 0 auto;
+  width: 50%;
 }
 
 div.imac img {
@@ -275,27 +275,117 @@ li.pie:before {
 }
 
 li:before {
-  font-family: "FontAwesome";
-  font-size: 32px;
   float: left;
   margin-left: -2.5em;
-  color: rgb(68, 148, 187);
   border: 1px solid gray;
   border-radius: 50%;
-  height: 64px;
   width: 64px;
-  text-align: center;
+  height: 64px;
+  color: rgb(68, 148, 187);
+  font-family: "FontAwesome";
+  font-size: 32px;
   line-height: 2em;
+  text-align: center;
 }
 
 i {
-  font-size: 14px;
   float: left;
-  margin-left: -1.6em;
   margin-top: 1.9em;
+  margin-left: -1.6em;
   color: rgb(68, 148, 187);
+  font-size: 14px;
 }
 
 /* Projets */
+
+div.portfolio-wrapper {
+  background-color: #f5f5f5;
+  padding-top: 5%;
+}
+
+div#Portfolio {
+  margin: 0 auto;
+  width: 50%;
+  height: 138px;
+  text-align: center;
+}
+
+div#Portfolio h1 {
+  margin-bottom: 20px;
+}
+
+div#Portfolio h2 {
+  margin-top: 20px;
+}
+
+.nav_projets {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  color: #787878;
+}
+
+.nav_projets ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav_projets a {
+  display: inline-block;
+  background-color: rgb(229, 229, 229);
+  box-shadow: 0px 3px 0px 0px rgb(229, 229, 229);
+  padding: 1%;
+  width: 80.4px;
+  height: 20px;
+  text-align: center;
+}
+
+.nav-border-left {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.nav-border-right {
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.nav_projets a {
+  color: #7d7d7d;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.nav_projets a:hover {
+  box-shadow: 0px 3px 0px 0px rgb(70, 140, 173);
+  background-color: rgb(92, 173, 211);
+  color: white;
+}
+
+.nav_projets a:hover:after {
+  position: absolute;
+  margin-top: -26px;
+  content: "\f0d7";
+  color: rgb(70, 140, 173);
+  font-family: "FontAwesome";
+  font-size: 22px;
+}
+
+div.works {
+  width: 70%;
+  margin: 0 auto;
+}
+
+div.works ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+div.works img {
+  max-width: 262px;
+}
 
 /* Contact */
