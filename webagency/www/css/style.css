@@ -344,6 +344,9 @@ div#Portfolio h2 {
   width: 80.4px;
   height: 20px;
   text-align: center;
+  color: #7d7d7d;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 
 .nav-border-left {
@@ -354,12 +357,6 @@ div#Portfolio h2 {
 .nav-border-right {
   border-top-right-radius: 10%;
   border-bottom-right-radius: 10%;
-}
-
-.nav_projets a {
-  color: #7d7d7d;
-  font-size: 0.9em;
-  text-decoration: none;
 }
 
 .nav_projets a:hover {
