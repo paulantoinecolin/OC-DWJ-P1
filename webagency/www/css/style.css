@@ -334,73 +334,100 @@ div.portfolio p {
   margin-top: 10px;
 }
 
-.nav_projets ul {
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  list-style-type: none;
+.nav_projets {
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 20px;
   color: #787878;
 }
 
-.nav_projets li {
+.nav-wrapper {
+  height: 40px;
+  border-radius: 5px;
   background-color: rgb(229, 229, 229);
   box-shadow: 0px 3px 0px 0px rgb(229, 229, 229);
 }
 
-.nav_projets ul li:first-child {
+input.border-left + label {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
 
-.nav_projets ul li:last-child {
+input.border-right + label {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.nav_projets a {
-  color: var(--gray-text);
-  display: block;
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
   font-size: 0.9em;
-  text-align: center;
   text-decoration: none;
-  width: 120px;
-  margin-top: 12px;
+  padding: 12px;
 }
 
-.nav_projets li:hover a {
+label:hover,
+input[type="radio"]:checked + label {
   color: white;
-}
-
-.nav_projets li:hover {
   background-color: var(--color-fill);
   box-shadow: 0px 3px 0px 0px var(--color-shadow);
 }
 
-.nav_projets li:hover::after {
+input[type="radio"]:checked + label::after {
   color: var(--color-shadow);
   content: "\f0d7";
   font-size: 22px;
-  margin: 6px 0 0 50px;
+  margin: 22px 0 0 -3%;
   position: absolute;
 }
 
 div.works {
   margin: 0 auto;
-  padding-top: 60px;
-  width: 80%;
+  width: 90%;
+  border: 1px solid red;
+  margin-top: 40px;
 }
 
 div.works ul {
   display: flex;
   flex-wrap: wrap;
   flex: 1 0 21%;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
-  border: 1px solid red;
 }
 
 div.works img {
   max-width: 262px;
+}
+
+figcaption {
+  position: absolute;
+  margin-top: -65px;
+  padding: 10px 33px;
+  text-align: left;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+figcaption::before {
+  content: "\f06e";
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--color-fill);
+  float: right;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  text-align: center;
 }
 
 /* Contact */

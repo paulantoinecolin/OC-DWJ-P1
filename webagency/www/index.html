@@ -114,12 +114,25 @@
           </p>
         </div>
         <nav class="nav_projets">
-          <ul>
-            <li><a href="#A" class="nav-border-left">All Works</a></li>
-            <li><a href="#B">Creative</a></li>
-            <li><a href="#C">Corporate</a></li>
-            <li><a href="#D" class="nav-border-right">Portfolio</a></li>
-          </ul>
+          <div class="nav-wrapper">
+            <input
+              type="radio"
+              id="all"
+              class="btn-filter border-left"
+              checked
+            />
+            <label for="btn-filter">All Works</label>
+            <input type="radio" id="creative" class="btn-filter" />
+            <label for="btn-filter">Creative</label>
+            <input type="radio" id="corporate" class="btn-filter" />
+            <label for="btn-filter" onclick>Corporate</label>
+            <input
+              type="radio"
+              id="portfolio"
+              class="btn-filter border-right"
+            />
+            <label for="btn-filter" onclick>Portfolio</label>
+          </div>
         </nav>
         <div class="works">
           <ul>
