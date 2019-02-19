@@ -34,9 +34,9 @@
 
       <div class="banner">
         <div class="banner_img">
-          <i class="fas fa-angle-left"></i>
+          <i class="fas fa-angle-left fa-angle"></i>
           <img src="img/slider/bg1.jpg" alt="banner" />
-          <i class="fas fa-angle-right"></i> <span></span>
+          <i class="fas fa-angle-right fa-angle"></i> <span></span>
         </div>
 
         <div class="banner_slogan">
@@ -44,7 +44,9 @@
           <p>
             Vous avez un projet web ? La WebAgency vous aide à le réaliser !
           </p>
-          <p class="bouton_bleu"><a href="#Portfolio">Plus d'infos</a></p>
+          <button class="bouton_bleu">
+            <a href="#Portfolio">Plus d'infos</a>
+          </button>
         </div>
       </div>
 
@@ -121,16 +123,56 @@
         </nav>
         <div class="works">
           <ul>
-            <li><img src="img/portfolio/01.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/02.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/03.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/04.jpg" alt="portfolio" /></li>
+            <li>
+              <figure>
+                <img src="img/portfolio/01.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/02.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/03.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/04.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
           </ul>
           <ul>
-            <li><img src="img/portfolio/05.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/06.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/07.jpg" alt="portfolio" /></li>
-            <li><img src="img/portfolio/08.jpg" alt="portfolio" /></li>
+            <li>
+              <figure>
+                <img src="img/portfolio/05.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/06.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/07.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/portfolio/08.jpg" alt="portfolio" />
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+              </figure>
+            </li>
           </ul>
         </div>
       </div>
@@ -197,7 +239,11 @@
                 placeholder="Message"
               ></textarea>
             </p>
-            <input type="submit" value="Send Message" class="submit" />
+            <input
+              type="submit"
+              value="Send Message"
+              class="submit bouton_bleu"
+            />
             <div class="form-wrapper-overlay"></div>
           </form>
         </div>
