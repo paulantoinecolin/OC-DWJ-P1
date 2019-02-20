@@ -150,7 +150,6 @@ div.banner_img img {
 }
 
 div.banner_img {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +495,6 @@ div.form-wrapper {
   width: 25%;
   height: 50%;
   right: 0;
-
   z-index: 100;
 }
 
