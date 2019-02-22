@@ -1,26 +1,26 @@
 /* Définition des polices personnalisées */
 
 @font-face {
-  font-family: "robotoregular";
-  font-style: normal;
-  font-weight: normal;
   src: url("Roboto-Regular-webfont.eot");
   src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("Roboto-Regular-webfont.woff2") format("woff2"),
     url("Roboto-Regular-webfont.woff") format("woff"),
     url("Roboto-Regular-webfont.ttf") format("truetype"),
     url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-family: "robotoregular";
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: "fontawesome-webfont";
-  font-style: normal;
-  font-weight: normal;
   src: url("fontawesome-webfont.eot");
   src: url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
     url("fontawesome-webfont.woff") format("woff"),
     url("fontawesome-webfont.ttf") format("truetype"),
     url("fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+  font-family: "fontawesome-webfont";
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* Définition des propriétés personnalisées */
@@ -36,9 +36,9 @@
 /* Eléments principaux de la page */
 
 * {
-  font-family: "roboto", serif;
   margin: 0;
   padding: 0;
+  font-family: "roboto", serif;
 }
 
 h1 {
@@ -51,8 +51,8 @@ h2 {
 
 p {
   padding: 10px 0;
-  font-size: 0.9vw;
   color: var(--gray-text);
+  font-size: 0.9vw;
 }
 
 ::before,
@@ -61,17 +61,17 @@ p {
 }
 
 .bouton_bleu {
-  font-size: 1em;
   border: none;
+  font-size: 1em;
 }
 
 button.bouton_bleu a,
 input.bouton_bleu {
+  box-shadow: 0 4px 1px -1px var(--color-shadow);
   border-radius: 3px;
+  background-color: var(--color-fill);
   padding: 11px 23px;
   color: white;
-  box-shadow: 0 4px 1px -1px var(--color-shadow);
-  background-color: var(--color-fill);
   text-decoration: none;
 }
 
@@ -81,17 +81,17 @@ div.main-wrapper {
 }
 
 header {
-  background: white;
-  height: 100px;
-  opacity: 0.9;
   position: fixed;
-  width: 100%;
+  opacity: 0.9;
   z-index: 100;
+  background: white;
+  width: 100%;
+  height: 100px;
 }
 
 div.header-wrapper {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -106,8 +106,8 @@ div.logo img {
 /* Navigation */
 
 .nav_main {
-  color: var(--gray-text);
   padding-right: 10%;
+  color: var(--gray-text);
 }
 
 .nav_main ul {
@@ -118,8 +118,8 @@ div.logo img {
 .nav_main li {
   border-top: 2px solid transparent;
   padding-top: 42px;
-  text-align: center;
   width: 80.4px;
+  text-align: center;
 }
 
 .nav_main li:hover {
@@ -150,43 +150,43 @@ div.banner_img img {
 }
 
 div.banner_img {
-  position: relative;
   display: flex;
-  justify-content: center;
+  position: relative;
   align-items: center;
+  justify-content: center;
 }
 
 /* boutons gauche / droite slideshow */
 
 i.fa-angle-left::before,
 i.fa-angle-right::before {
+  display: block;
+  position: absolute;
   background: rgba(0, 0, 0, 0.2);
   color: white;
-  display: block;
   font-size: 25px;
-  position: absolute;
 }
 
 i.fa-angle-left::before {
-  padding: 25px 20px 25px 5px;
-  border-bottom-right-radius: 45px;
   border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  padding: 25px 20px 25px 5px;
 }
 
 i.fa-angle-right::before {
-  padding: 25px 5px 25px 20px;
-  border-bottom-left-radius: 45px;
-  border-top-left-radius: 45px;
   right: 0;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  padding: 25px 5px 25px 20px;
 }
 
 div.banner_slogan {
   position: absolute;
+  margin-top: -23.5%;
+  padding-left: 130px;
   color: white;
   font-size: 1.2vw;
   letter-spacing: 0.1em;
-  margin-top: -23.5%;
-  padding-left: 130px;
 }
 
 div.banner_slogan span {
@@ -194,10 +194,10 @@ div.banner_slogan span {
 }
 
 div.banner_slogan p {
-  font-size: 1.2vw;
-  letter-spacing: 0;
   margin-top: 13px;
   color: white;
+  font-size: 1.2vw;
+  letter-spacing: 0;
 }
 
 button.bouton_bleu {
@@ -214,19 +214,19 @@ button.bouton_bleu a:active {
 
 div.banner_img span {
   position: absolute;
-  width: 10%;
-  border-bottom: 5px solid var(--color-fill);
   bottom: 0;
   left: 0;
+  border-bottom: 5px solid var(--color-fill);
+  width: 10%;
 }
 
 /* Services */
 
 div.services {
-  padding-top: 15%;
   margin: 0 auto;
-  text-align: center;
+  padding-top: 15%;
   width: 50%;
+  text-align: center;
 }
 
 div.services h1 {
@@ -243,23 +243,24 @@ hr {
 }
 
 hr::before {
-  background: var(--color-fill);
+  position: absolute;
+  margin: -10px;
   border: 3px solid white;
   border-radius: 100%;
-  content: "";
-  height: 14px;
-  margin: -10px;
-  position: absolute;
+  background: var(--color-fill);
   width: 14px;
+  height: 14px;
+  content: "";
 }
 
 div.foot_block {
   display: flex;
-  height: 450px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
   margin-top: 50px;
-  width: 100%;
+  width: 80%;
+  height: 450px;
 }
 
 div.imac,
@@ -275,12 +276,11 @@ div.imac img {
 
 div.services_list {
   line-height: 1em;
-  margin-right: 150px;
 }
 
 div.services_list ul {
-  list-style: none;
   padding-left: 120px;
+  list-style: none;
 }
 
 li {
@@ -300,24 +300,24 @@ li.pie:before {
 }
 
 li:before {
+  float: left;
+  margin-left: -2.5em;
   border: 1px solid gray;
   border-radius: 50%;
-  color: var(--color-fill);
-  float: left;
-  font-size: 32px;
-  height: 64px;
-  line-height: 2em;
-  margin-left: -2.5em;
-  text-align: center;
   width: 64px;
+  height: 64px;
+  color: var(--color-fill);
+  font-size: 32px;
+  line-height: 2em;
+  text-align: center;
 }
 
 i {
-  color: var(--color-fill);
   float: left;
-  font-size: 14px;
-  margin-left: -1.6em;
   margin-top: 1.9em;
+  margin-left: -1.6em;
+  color: var(--color-fill);
+  font-size: 14px;
 }
 
 /* Projets */
@@ -327,11 +327,11 @@ div.portfolio-wrapper {
 }
 
 div.portfolio {
-  padding-top: 10%;
-  height: 140px;
   margin: 0 auto;
-  text-align: center;
+  padding-top: 10%;
   width: 50%;
+  height: 140px;
+  text-align: center;
 }
 
 div.portfolio h1 {
@@ -344,18 +344,18 @@ div.portfolio p {
 
 .nav_projets {
   position: relative;
-  width: 328px;
   margin: 0 auto;
   padding-top: 20px;
+  width: 328px;
   color: #787878;
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(229, 229, 229);
-  border-radius: 5px;
   box-shadow: 0px 3px 0px 0px rgb(229, 229, 229);
+  border-radius: 5px;
+  background-color: rgb(229, 229, 229);
 }
 
 .btn-filter + label {
@@ -371,63 +371,64 @@ input[type="radio"] {
 }
 
 input.border-left + label {
-  border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 input.border-right + label {
-  border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 label {
-  font-size: 0.9em;
-  text-decoration: none;
-  text-align: center;
   padding: 12px;
+  font-size: 0.9em;
+  text-align: center;
+  text-decoration: none;
 }
 
 label:hover,
 input[type="radio"]:checked + label {
-  color: white;
-  background-color: var(--color-fill);
   box-shadow: 0px 3px 0px 0px var(--color-shadow);
+  background-color: var(--color-fill);
+  color: white;
 }
 
+label:hover::after,
 input[type="radio"]:checked + label::after {
-  color: var(--color-shadow);
-  content: "\f0d7";
-  font-size: 22px;
-  margin: 23px 0 0 -40%;
   position: absolute;
+  margin: 23px 0 0 -40%;
+  color: var(--color-shadow);
+  font-size: 22px;
+  content: "\f0d7";
 }
 
 div.works {
   position: relative;
   margin: 0 auto;
-  width: 90%;
   margin-top: 40px;
+  width: 90%;
 }
 
 div.works ul {
   display: flex;
-  flex-wrap: wrap;
   flex: 1 0 21%;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
 }
 
 div.works img {
-  max-width: 262px;
   display: block;
+  max-width: 262px;
 }
 
 figcaption h1 {
-  text-transform: capitalize;
-  line-height: 0.9;
-  font-size: 1em;
   padding: 15px 0 0 15px;
   color: white;
+  font-size: 1em;
+  line-height: 0.9;
+  text-transform: capitalize;
 }
 
 figcaption p {
@@ -437,33 +438,33 @@ figcaption p {
 
 figcaption {
   position: absolute;
-  width: 100%;
-  height: 60px;
-  max-width: 262px;
-  margin-top: -60px;
-  text-align: left;
-  line-height: 0.4em;
-  background-color: rgba(0, 0, 0, 0.4);
   visibility: hidden;
+  margin-top: -60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 262px;
+  height: 60px;
+  line-height: 0.4em;
+  text-align: left;
 }
 
 figcaption::before {
-  content: "\f06e";
   display: inline-block;
+  vertical-align: bottom;
+  float: right;
+  margin-top: -25px;
+  margin-right: 10px;
   border: 2px solid white;
   border-radius: 50%;
+  background-color: var(--color-fill);
+  padding: 10px;
   width: 25px;
   height: 25px;
   color: white;
-  background-color: var(--color-fill);
-  float: right;
   font-size: 18px;
-  padding: 10px;
-  margin-top: -25px;
-  margin-right: 10px;
   line-height: 25px;
   text-align: center;
-  vertical-align: bottom;
+  content: "\f06e";
 }
 
 li:hover figcaption {
@@ -479,32 +480,33 @@ div.google-wrapper {
 }
 
 div.google-map-overlay {
-  background: rgb(92, 173, 211);
-  height: 750px;
-  opacity: 0.5;
-  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  opacity: 0.5;
   z-index: 99;
+  background: rgb(92, 173, 211);
+  width: 100%;
+  height: 750px;
+  pointer-events: none;
 }
 
 div.form-wrapper {
-  background: rgba(255, 255, 255, 0.8);
-  margin-right: 20px;
   position: absolute;
-  width: 25%;
-  height: 50%;
   right: 0;
   z-index: 100;
+  margin-top: -700px;
+  margin-right: 150px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 25%;
+  height: 50%;
 }
 
 form h1,
 form p {
-  text-transform: capitalize;
-  line-height: 1.5em;
   padding: 15px 0 0 15px;
+  line-height: 1.5em;
+  text-transform: capitalize;
 }
 
 form h1 {
@@ -518,17 +520,17 @@ form p {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 95%;
-  height: 2.3em;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding-left: 12px;
+  width: 93%;
+  height: 2.3em;
   font-size: 1.1em;
 }
 
 textarea {
-  height: 10em;
   padding-top: 10px;
+  height: 10em;
 }
 
 input.bouton_bleu {
