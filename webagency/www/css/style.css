@@ -1,24 +1,23 @@
 /* Définition des polices personnalisées */
 
 @font-face {
-  src: url("Roboto-Regular-webfont.eot");
-  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("Roboto-Regular-webfont.woff2") format("woff2"),
-    url("Roboto-Regular-webfont.woff") format("woff"),
-    url("Roboto-Regular-webfont.ttf") format("truetype"),
-    url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-family: "robotoregular";
+  src: url("../font/Roboto-Regular-webfont.eot");
+  src: url("../font/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../font/Roboto-Regular-webfont.woff") format("woff"),
+    url("../font/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("../font/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-family: "roboto";
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  src: url("fontawesome-webfont.eot");
-  src: url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
-    url("fontawesome-webfont.woff") format("woff"),
-    url("fontawesome-webfont.ttf") format("truetype"),
-    url("fontawesome-webfont.svg#fontawesome-webfont") format("svg");
-  font-family: "fontawesome-webfont";
+  src: url("..//font/fontawesome-webfont.eot");
+  src: url("..//font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+    url("..//font/fontawesome-webfont.woff") format("woff"),
+    url("..//font/fontawesome-webfont.ttf") format("truetype"),
+    url("..//font/fontawesome-webfont.svg#fontawesome-webfont") format("svg");
+  font-family: "fontawesome";
   font-style: normal;
   font-weight: normal;
 }
@@ -57,7 +56,7 @@ p {
 
 ::before,
 ::after {
-  font-family: "FontAwesome";
+  font-family: "fontawesome";
 }
 
 .bouton_bleu {
@@ -118,7 +117,7 @@ div.logo img {
 .nav_main li {
   border-top: 2px solid transparent;
   padding-top: 42px;
-  width: 80.4px;
+  width: 100px;
   text-align: center;
 }
 
@@ -322,7 +321,7 @@ i {
 
 /* Projets */
 
-div.portfolio-wrapper {
+section.portfolio-wrapper {
   background-color: #f5f5f5;
 }
 
@@ -442,7 +441,7 @@ figcaption {
   margin-top: -60px;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  max-width: 262px;
+  max-width: 300px;
   height: 60px;
   line-height: 0.4em;
   text-align: left;
@@ -536,4 +535,43 @@ textarea {
 input.bouton_bleu {
   position: absolute;
   margin: 15px 15px;
+}
+
+/* Version Responsive */
+
+/* Version mobile */
+
+@media screen and (max-width: 425px) {
+  div.main-wrapper {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  header {
+    height: 170px;
+  }
+
+  div.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.logo img {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .nav_main li:hover {
+    display: none;
+  }
+
+  div.banner_img img {
+    padding-top: 170px;
+  }
+
+
+
 }
