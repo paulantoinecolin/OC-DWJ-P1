@@ -452,7 +452,7 @@ figure img {
 figcaption {
   position: absolute;
   display: table-caption;
-  /* visibility: hidden; */
+  visibility: hidden;
   margin-top: -70px;
   background-color: rgba(0, 0, 0, 0.4);
   line-height: 0.8em;
