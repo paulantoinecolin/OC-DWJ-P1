@@ -53,16 +53,17 @@
   padding: 0;
 }
 
-h1, h3 {
+h1,
+h3 {
   padding-top: 10px;
-  text-transform: uppercase;
-  font-size: 3em;
   font-family: "roboto-black", serif;
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.2em;
   font-family: "roboto", serif;
+  font-size: 1.2em;
 }
 
 a,
@@ -73,15 +74,15 @@ label {
 p {
   padding: 10px 0;
   color: var(--gray-text);
-  font-size: 0.9vw;
   font-family: "roboto", serif;
+  font-size: 0.9vw;
 }
 
 strong {
   display: block;
-  text-transform: uppercase;
-  font-size: 0.7em;
   font-family: "roboto-black", serif;
+  font-size: 0.7em;
+  text-transform: uppercase;
 }
 
 ::before,
@@ -300,14 +301,14 @@ div.imac img {
 }
 
 div.services_list {
-  line-height: 1em;
   padding-top: 6%;
+  line-height: 1em;
 }
 
 div.services_list ul {
   padding-left: 120px;
-  list-style: none;
   line-height: 1em;
+  list-style: none;
 }
 
 li {
@@ -431,10 +432,10 @@ input[type="radio"]:checked + label::after {
 }
 
 div.works {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-column-gap: 2%;
   grid-row-gap: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   margin: 0 auto;
   margin-top: 50px;
   max-width: 90%;
@@ -450,17 +451,18 @@ figure img {
 }
 
 figcaption {
-  position: absolute;
   display: table-caption;
+  position: absolute;
   visibility: hidden;
   margin-top: -70px;
   background-color: rgba(0, 0, 0, 0.4);
-  line-height: 0.8em;
   height: 70px;
+  line-height: 0.8em;
   text-align: left;
 }
 
-figcaption h1, h3 {
+figcaption h1,
+h3 {
   display: inline-block;
   padding: 15px 0 0 15px;
   color: white;
@@ -501,9 +503,9 @@ figure:hover figcaption {
 
 div.google-wrapper {
   position: relative;
+  z-index: 80;
   width: 100%;
   height: 630px;
-  z-index: 80;
 }
 
 div.google-map-overlay {
@@ -548,8 +550,8 @@ form p {
 }
 
 ::placeholder {
-  font-weight: 500;
   color: rgb(160, 160, 160);
+  font-weight: 500;
 }
 
 input[type="text"],
@@ -579,7 +581,6 @@ input.bouton_bleu {
 /* Version mobile */
 
 @media screen and (max-width: 480px) {
-
   h1 {
     font-size: 6vw;
   }
@@ -596,13 +597,13 @@ input.bouton_bleu {
 
   strong {
     display: block;
-    text-transform: uppercase;
     font-size: 4vw;
+    text-transform: uppercase;
   }
 
   header {
-    height: 170px;
     width: 100%;
+    height: 170px;
   }
 
   div.header-wrapper {
@@ -611,11 +612,11 @@ input.bouton_bleu {
 
   div.logo {
     padding: 0;
-}
+  }
 
-.nav_main {
+  .nav_main {
     padding: 0;
-}
+  }
 
   div.logo img {
     margin: 0 auto;
@@ -636,9 +637,9 @@ input.bouton_bleu {
   .nav_main a {
     font-size: 3.5vmin;
     text-decoration: none;
-}
+  }
 
- .nav_main li:hover {
+  .nav_main li:hover {
     border: none;
   }
 
@@ -671,15 +672,16 @@ input.bouton_bleu {
     font-size: 2.6vw;
   }
 
-div.banner_slogan p span {
-  display: block;
-}
+  div.banner_slogan p span {
+    display: block;
+  }
 
   button.bouton_bleu {
     display: none;
   }
 
-  div.services, div.portfolio {
+  div.services,
+  div.portfolio {
     width: 80%;
   }
 
@@ -702,15 +704,15 @@ div.banner_slogan p span {
   }
 
   div.services_list {
-    line-height: 1em;
     padding: 6% 6% 0 0;
     width: 80%;
+    line-height: 1em;
   }
 
   div.services_list ul {
     padding-left: 90px;
-    list-style: none;
     line-height: 1em;
+    list-style: none;
   }
 
   .nav_projets {
@@ -726,6 +728,7 @@ div.banner_slogan p span {
   }
 
   label {
+    width:
     padding: 3.6px 14.3px;
     font-size: 0.8em;
   }
@@ -768,7 +771,6 @@ div.banner_slogan p span {
 /* Version tablette */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
   /* h1 {
     font-size: 6vw;
   } */
@@ -791,15 +793,15 @@ div.banner_slogan p span {
   }
 
   div.banner_slogan p span {
-  display: block;
+    display: block;
   }
 
   figcaption {
     visibility: hidden;
     margin-top: -50px;
     background-color: rgba(0, 0, 0, 0.4);
-    line-height: 0.8em;
     height: 50px;
+    line-height: 0.8em;
     text-align: left;
   }
 
@@ -856,7 +858,6 @@ div.banner_slogan p span {
 /* Version TV 4K */
 
 @media screen and (min-width: 2560px) {
-
   h1 {
     font-size: 5vw;
   }
@@ -901,21 +902,22 @@ div.banner_slogan p span {
     font-size: 1.5vw;
   }
 
-  div.services, div.portfolio {
+  div.services,
+  div.portfolio {
     width: 80%;
   }
 
   .nav_projets {
-    padding-top: 7%;
     position: relative;
     margin: 0 auto;
+    padding-top: 7%;
     width: 60%;
   }
 
   .nav-wrapper {
     position: relative;
-    border-radius: 15px;
     margin: 10% auto;
+    border-radius: 15px;
     width: 40.6%;
   }
 
@@ -928,36 +930,35 @@ div.banner_slogan p span {
   input[type="radio"]:checked + label::after {
     margin: 39.5px 0 0 -44%;
     font-size: 1em;
-}
+  }
 
-    input.border-left + label {
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-    }
+  input.border-left + label {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
 
-    input.border-right + label {
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
+  input.border-right + label {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 
-    figcaption {
-      visibility: hidden;
-      margin-top: -159px;
-      height: 160px;
-    }
+  figcaption {
+    visibility: hidden;
+    margin-top: -159px;
+    height: 160px;
+  }
 
-    figcaption h1 {
-      font-size: 2em;
-    }
+  figcaption h1 {
+    font-size: 2em;
+  }
 
-    figcaption::before {
-      margin-top: -30px;
-      margin-right: 40px;
-      padding: 20px;
-      width: 25px;
-      height: 25px;
-
-    }
+  figcaption::before {
+    margin-top: -30px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+  }
 
   div.google-wrapper {
     height: 575px;
