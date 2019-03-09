@@ -53,12 +53,13 @@
   padding: 0;
 }
 
-h1 {
+h1, h3 {
   padding-top: 10px;
   text-transform: uppercase;
   font-size: 3em;
   font-family: "roboto-black", serif;
 }
+
 h2 {
   font-size: 1.2em;
   font-family: "roboto", serif;
@@ -140,6 +141,7 @@ div.logo img {
 
 .nav_main ul {
   display: flex;
+  justify-content: center;
   list-style-type: none;
 }
 
@@ -169,7 +171,6 @@ div.logo img {
 div.banner {
   margin: 0 auto;
   width: auto;
-  height: auto;
 }
 
 div.banner_img img {
@@ -217,7 +218,7 @@ div.banner_slogan {
   letter-spacing: 0.1em;
 }
 
-div.banner_slogan span {
+div.banner_slogan span.blue {
   color: var(--color-fill);
 }
 
@@ -355,7 +356,6 @@ section.portfolio-wrapper {
 
 div.portfolio {
   margin: 0 auto;
-
   width: 50%;
   height: 140px;
   text-align: center;
@@ -437,7 +437,7 @@ div.works {
   grid-row-gap: 5%;
   margin: 0 auto;
   margin-top: 50px;
-  width: 90%;
+  max-width: 90%;
 }
 
 figure {
@@ -460,7 +460,7 @@ figcaption {
   text-align: left;
 }
 
-figcaption h1 {
+figcaption h1, h3 {
   display: inline-block;
   padding: 15px 0 0 15px;
   color: white;
@@ -503,6 +503,7 @@ div.google-wrapper {
   position: relative;
   width: 100%;
   height: 630px;
+  z-index: 80;
 }
 
 div.google-map-overlay {
@@ -510,7 +511,6 @@ div.google-map-overlay {
   top: 0;
   left: 0;
   opacity: 0.4;
-  z-index: 99;
   background: rgb(92, 173, 211);
   width: 100%;
   height: 750px;
@@ -520,7 +520,7 @@ div.google-map-overlay {
 div.form-wrapper {
   position: absolute;
   right: 0;
-  z-index: 99;
+  z-index: 90;
   margin-top: -580px;
   margin-right: 150px;
   background: rgba(255, 255, 255, 0.6);
@@ -566,6 +566,7 @@ textarea {
 textarea {
   padding-top: 10px;
   height: 10em;
+  font-family: "roboto", serif;
 }
 
 input.bouton_bleu {
@@ -577,34 +578,406 @@ input.bouton_bleu {
 
 /* Version mobile */
 
-@media screen and (max-width: 425px) {
-  div.main-wrapper {
-    margin: 0 auto;
-    width: auto;
+@media screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    padding: 10px 0;
+    font-size: 3.7vw;
+    text-align: justify;
+  }
+
+  strong {
+    display: block;
+    text-transform: uppercase;
+    font-size: 4vw;
   }
 
   header {
     height: 170px;
-  }
-
-  div.header-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  div.logo img {
-    margin: 0 auto;
-    padding-top: 20px;
     width: 100%;
   }
 
-  .nav_main li:hover {
-    display: none;
+  div.header-wrapper {
+    flex-direction: column;
+  }
+
+  div.logo {
+    padding: 0;
+}
+
+.nav_main {
+    padding: 0;
+}
+
+  div.logo img {
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .nav_main ul {
+    display: flex;
+  }
+
+  .nav_main li {
+    display: inline-block;
+    border: none;
+    padding-top: 32px;
+    max-width: 80px;
+  }
+
+  .nav_main a {
+    font-size: 3.5vmin;
+    text-decoration: none;
+}
+
+ .nav_main li:hover {
+    border: none;
   }
 
   div.banner_img img {
     padding-top: 170px;
+  }
+
+  i.fa-angle-left::before,
+  i.fa-angle-right::before {
+    font-size: 12px;
+  }
+
+  i.fa-angle-left::before {
+    margin-top: 40px;
+  }
+
+  i.fa-angle-right::before {
+    margin-top: 40px;
+  }
+
+  div.banner_slogan {
+    position: absolute;
+    margin-top: -30.8%;
+    padding-left: 31.2px;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+
+  div.banner_slogan p {
+    font-size: 2.6vw;
+  }
+
+div.banner_slogan p span {
+  display: block;
+}
+
+  button.bouton_bleu {
+    display: none;
+  }
+
+  div.services, div.portfolio {
+    width: 80%;
+  }
+
+  div.foot_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  div.imac,
+  div.services_list {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  div.imac img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  div.services_list {
+    line-height: 1em;
+    padding: 6% 6% 0 0;
+    width: 80%;
+  }
+
+  div.services_list ul {
+    padding-left: 90px;
+    list-style: none;
+    line-height: 1em;
+  }
+
+  .nav_projets {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .nav-wrapper {
+    position: relative;
+    margin: 10% auto;
+    width: 90%;
+  }
+
+  label {
+    padding: 3.6px 14.3px;
+    font-size: 0.8em;
+  }
+
+  label:hover::after,
+  input[type="radio"]:checked + label::after {
+    margin: 16px 0 0 -40%;
+  }
+
+  div.works {
+    display: block;
+    width: 80%;
+  }
+
+  figure {
+    padding-bottom: 30px;
+  }
+
+  /* figcaption {
+  visibility: visible;
+  } */
+
+  figcaption::before {
+    font-size: 4.5vw;
+  }
+
+  div.google-wrapper {
+    height: 575px;
+  }
+
+  div.form-wrapper {
+    margin-top: -539px;
+    margin-right: 20px;
+    background: rgba(255, 255, 255);
+    width: 90%;
+    height: 525px;
+  }
+}
+
+/* Version tablette */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  /* h1 {
+    font-size: 6vw;
+  } */
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    padding: 10px 0;
+    font-size: 1.5vw;
+  }
+
+  .nav_main li {
+    width: 70px;
+  }
+
+  div.banner_slogan p {
+    font-size: 1.5vw;
+  }
+
+  div.banner_slogan p span {
+  display: block;
+  }
+
+  figcaption {
+    visibility: hidden;
+    margin-top: -50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 0.8em;
+    height: 50px;
+    text-align: left;
+  }
+
+  figcaption h3 {
+    padding: 15px 0 0 4px;
+    color: white;
+    font-size: 0.6em;
+    line-height: 0.1;
+    text-transform: capitalize;
+  }
+
+  figcaption p {
+    display: inline-block;
+    padding: 0 0 0 4px;
+    color: white;
+    font-size: 0.5em;
+  }
+
+  figcaption::before {
+    vertical-align: bottom;
+    float: right;
+    margin-top: -15px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: var(--color-fill);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    color: white;
+    font-size: 0.8em;
+    line-height: 9px;
+    text-align: center;
+    content: "\f06e";
+  }
+
+  figure:hover figcaption {
+    visibility: visible;
+  }
+
+  div.google-wrapper {
+    height: 575px;
+  }
+
+  div.form-wrapper {
+    margin-top: -539px;
+    margin-right: 25%;
+    background: rgba(255, 255, 255);
+    width: 50%;
+    height: 525px;
+  }
+}
+
+/* Version TV 4K */
+
+@media screen and (min-width: 2560px) {
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 1.5vw;
+  }
+
+  p {
+    padding: 10px 0;
+    font-size: 1.2vw;
+    line-height: 1.5em;
+  }
+
+  .nav_main li {
+    width: 150px;
+  }
+
+  i.fa-angle-left::before,
+  i.fa-angle-right::before {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2.3vw;
+  }
+
+  i.fa-angle-left::before {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    padding: 25px 35px 25px 5px;
+  }
+
+  i.fa-angle-right::before {
+    right: 0;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    padding: 25px 5px 25px 35px;
+  }
+
+  div.banner_slogan p {
+    font-size: 1.5vw;
+  }
+
+  div.services, div.portfolio {
+    width: 80%;
+  }
+
+  .nav_projets {
+    padding-top: 7%;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .nav-wrapper {
+    position: relative;
+    border-radius: 15px;
+    margin: 10% auto;
+    width: 40.6%;
+  }
+
+  label {
+    padding: 3.6px 13px;
+    font-size: 2em;
+  }
+
+  label:hover::after,
+  input[type="radio"]:checked + label::after {
+    margin: 39.5px 0 0 -44%;
+    font-size: 1em;
+}
+
+    input.border-left + label {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    input.border-right + label {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    figcaption {
+      visibility: hidden;
+      margin-top: -159px;
+      height: 160px;
+    }
+
+    figcaption h1 {
+      font-size: 2em;
+    }
+
+    figcaption::before {
+      margin-top: -30px;
+      margin-right: 40px;
+      padding: 20px;
+      width: 25px;
+      height: 25px;
+
+    }
+
+  div.google-wrapper {
+    height: 575px;
+  }
+
+  div.form-wrapper {
+    position: absolute;
+    z-index: 99;
+    margin-top: -539px;
+    margin-right: 5%;
+    background: rgba(255, 255, 255, 0.6);
+    width: 20%;
+    height: 686px;
+  }
+
+  form h1 {
+    font-size: 2.5em;
+  }
+
+  form p {
+    font-size: 1.2em;
   }
 }
